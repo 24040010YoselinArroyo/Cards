@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceptos básicos de JavaScript</title>
+  <link rel="stylesheet" href="style/cards.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+  <header>
+    <h1>--- Conceptos básicos de JavaScript ---</h1>
+    <p>Explora los fundamentos de JavaScript: Selectores, Eventos y Funciones.</p>
+  </header>
+
+  <section class="card-container">
+
+    <div class="card">
+      <i class="bi bi-cursor icon"></i>
+      <h2>Selectores</h2>
+      <p>Los <strong>selectores</strong> en JavaScript permiten acceder y manipular elementos del DOM (la estructura HTML). Se usan para cambiar contenido, estilos o responder a interacciones.</p>
+      <div class="example">
+        <code>
+          const titulo = document.querySelector('h1');<br>
+          titulo.style.color = 'blue';
+        </code>
+      </div>
+      <p class="uso">🔹 Uso: <strong>document.querySelector()</strong>, <strong>getElementById()</strong></p>
+      <button id="btn-selector">Mostrar ejemplo</button>
+      <div id="resultado-selector" class="resultado"></div>
+    </div>
+
+
+    <div class="card">
+      <i class="bi bi-lightning-charge icon"></i>
+      <h2>Eventos</h2>
+      <p>Los <strong>eventos</strong> permiten ejecutar acciones cuando el usuario interactúa con la página, como hacer clic, mover el mouse o escribir.</p>
+      <div class="example">
+        <code>
+          const btn = document.getElementById('boton');<br>
+          btn.addEventListener('click', () => {<br>
+          &nbsp;&nbsp;alert('¡Evento activado!');<br>
+          });
+        </code>
+      </div>
+      <p class="uso">🔹 Uso: <strong>addEventListener()</strong></p>
+      <button id="btn-evento">Mostrar ejemplo</button>
+      <div id="resultado-evento" class="resultado"></div>
+    </div>
+
+
+    <div class="card">
+      <i class="bi bi-code-slash icon"></i>
+      <h2>Funciones</h2>
+      <p>Las <strong>funciones</strong> agrupan bloques de código que se pueden reutilizar para realizar tareas específicas. Son esenciales en cualquier programa.</p>
+      <div class="example">
+        <code>
+          function saludar(nombre) {<br>
+          &nbsp;&nbsp;console.log('Hola ' + nombre);<br>
+          }<br>
+          saludar('UTC');
+        </code>
+      </div>
+      <p class="uso">🔹 Uso: <strong>function</strong>, <strong>return</strong>, <strong>parámetros</strong></p>
+      <button id="btn-funcion">Mostrar ejemplo</button>
+      <div id="resultado-funcion" class="resultado"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Desarrollado por Yoselin Arroyo  —  Entregables JS</p>
+  </footer>
+
+
+  <script src="js/cards.js"></script>
+</body>
+</html>
