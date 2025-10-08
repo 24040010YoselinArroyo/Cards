@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(135deg, #cfe0ff, #ffffff);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #3881ca;
+  margin-bottom: 1.0rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  flex: 1;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 2.8rem;
+  color: #6e20a1;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  color: #003366;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.example {
+  background-color: #f1f5ff;
+  border-left: 4px solid #0056b3;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+code {
+  color: #222;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  white-space: pre-line;
+}
+
+.uso {
+  font-size: 0.9rem;
+  color: #0073e6;
+  margin-top: 0.5rem;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f0f3fa;
+  border-top: 1px solid #d8e0f0;
+}
+
+.resultado {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e8f0fe;
+  border-left: 4px solid #0056b3;
+  border-radius: 6px;
+  min-height: 30px;
+  font-family: 'Courier New', monospace;
+  color: #333;
+}
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2083a1;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0f0438;
+}
